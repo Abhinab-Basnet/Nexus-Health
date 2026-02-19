@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #121212;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>581</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QFrame" name="frameDoctors">
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+    background-color: #1E1E2E;
+    border-radius: 12px;
+    border: 1px solid #33334d;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>191</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QFrame" name="doc1">
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+    background-color: #1B263B;
+    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    margin: 5px;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>191</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLabel" name="lblDoc1Name">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: 500;
+}</string>
+               </property>
+               <property name="text">
+                <string>Doctor Alpha: Idle</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbDoc1">
+               <property name="styleSheet">
+                <string notr="true">QProgressBar {
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #121212;
+}
+
+QProgressBar::chunk {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #06D6A0, stop:1 #00B4D8);
+    border-radius: 3px;
+}</string>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="doc2">
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+    background-color: #1B263B;
+    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    margin: 5px;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>191</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="lblDoc2Name">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: 500;
+}</string>
+               </property>
+               <property name="text">
+                <string>Doctor Alpha: Abhinab</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbDoc2">
+               <property name="styleSheet">
+                <string notr="true">QProgressBar {
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #121212;
+}
+
+QProgressBar::chunk {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #06D6A0, stop:1 #00B4D8);
+    border-radius: 3px;
+}</string>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="doc3">
+           <property name="styleSheet">
+            <string notr="true">QFrame {
+    background-color: #1B263B;
+    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    margin: 5px;
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <widget class="QWidget" name="verticalLayoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>191</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLabel" name="lblDoc3Name">
+               <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: 500;
+}</string>
+               </property>
+               <property name="text">
+                <string>Doctor Alpha: Ram</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="pbDoc3">
+               <property name="styleSheet">
+                <string notr="true">QProgressBar {
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #121212;
+}
+
+QProgressBar::chunk {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #06D6A0, stop:1 #00B4D8);
+    border-radius: 3px;
+}</string>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frameQueue">
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+    background-color: #1E1E2E;
+    border-radius: 12px;
+    border: 1px solid #33334d;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: 500;
+}</string>
+           </property>
+           <property name="text">
+            <string>LIVE WAITING ROOM</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listPatients">
+           <property name="styleSheet">
+            <string notr="true">QListWidget {
+    background-color: #161625;
+    border: 1px solid #00B4D8;
+    border-radius: 8px;
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frameInput">
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+    background-color: #1E1E2E;
+    border-radius: 12px;
+    border: 1px solid #33334d;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>191</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="btnNormal">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #00B4D8;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 13px;
+}
+QPushButton:hover {
+    background-color: #0096C7;
+}</string>
+           </property>
+           <property name="text">
+            <string>Add Normal Case</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnEmergency">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+   background-color: #E63946;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 13px;
+}
+QPushButton:hover {
+    background-color: #D62828;
+}</string>
+           </property>
+           <property name="text">
+            <string>ADD EMERGENCY</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="totalTreated">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;;
+    font-weight: 500;
+}</string>
+           </property>
+           <property name="text">
+            <string>Total Treated: 0</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>0</y>
+      <width>421</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="groupSearch">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+    border: 2px solid #3d3d5c;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #00d4ff; /* Cyan title */
+    font-weight: bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>PATIENT RECORD SYSTEM</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+       <widget class="QLineEdit" name="searchEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+    background-color: #1b1b2f;
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Enter 4-Digit Patient ID...</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblHistory">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>401</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+    background-color: #121225;
+    border-radius: 5px;
+    padding: 10px;
+    color: #cccccc;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 13px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Patient details will appear here.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>581</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupNav">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox#groupNav {
+    border: 2px solid #55557f;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #ffaa00; /* Orange for Navigation */
+    font-weight: bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>HOSPITAL NAVIGATION (DIJKSTRA)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+       <widget class="QLabel" name="lblMap">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#lblMap {
+    background-color: #0d0d1a;
+    border: 1px dashed #55557f;
+    padding: 10px;
+    color: #8888aa;
+    font-family: &quot;Courier New&quot;; /* Monospace for map feel */
+    font-size: 11px;
+}</string>
+        </property>
+        <property name="text">
+         <string>A simple text-based map</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnToER1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Emergency Room 1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblRouteResult">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>120</y>
+          <width>531</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel#lblRouteResult {
+    color: #ffaa00;
+    font-weight: bold;
+    padding: 5px;
+}</string>
+        </property>
+        <property name="text">
+         <string>Route will appear here...</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnToER2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>70</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Emergency Room 2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnToICU">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>70</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ICU</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnToSurgery">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>70</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Surgery</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>330</y>
+      <width>421</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QGroupBox" name="groupLogs">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox#groupLogs {
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #00ff00; /* Neon Green */
+    font-weight: bold;
+    background-color: #050505;
+}</string>
+       </property>
+       <property name="title">
+        <string>SYSTEM EVENT LOG (CIRCULAR BUFFER)</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+       <widget class="QListWidget" name="listLogs">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>401</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QListWidget#listLogs {
+    background-color: #000000;
+    border: none;
+    color: #00ff00; /* Terminal Green text */
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+}</string>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
