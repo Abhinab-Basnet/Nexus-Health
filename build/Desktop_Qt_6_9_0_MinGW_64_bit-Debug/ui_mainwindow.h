@@ -18,7 +18,6 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
@@ -82,7 +81,6 @@ public:
     QHBoxLayout *horizontalLayout_4;
     QGroupBox *groupLogs;
     QListWidget *listLogs;
-    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -90,9 +88,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(1048, 658);
-        MainWindow->setStyleSheet(QString::fromUtf8("QMainWindow {\n"
-"    background-color: #121212;\n"
-"}"));
+        MainWindow->setStyleSheet(QString::fromUtf8(""));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         horizontalLayoutWidget = new QWidget(centralwidget);
@@ -104,9 +100,9 @@ public:
         frameDoctors = new QFrame(horizontalLayoutWidget);
         frameDoctors->setObjectName("frameDoctors");
         frameDoctors->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1E1E2E;\n"
+"    background-color: #7FA1C3;\n"
 "    border-radius: 12px;\n"
-"    border: 1px solid #33334d;\n"
+"    border: 1px solid #DDDAD0;\n"
 "}"));
         frameDoctors->setFrameShape(QFrame::Shape::StyledPanel);
         frameDoctors->setFrameShadow(QFrame::Shadow::Raised);
@@ -119,8 +115,8 @@ public:
         doc1 = new QFrame(verticalLayoutWidget_3);
         doc1->setObjectName("doc1");
         doc1->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1B263B;\n"
-"    border: 1px solid #415A77; /* Subtle border to make it look like glass */\n"
+"    background-color: #E2DAD6;\n"
+"    \n"
 "    margin: 5px;\n"
 "}"));
         doc1->setFrameShape(QFrame::Shape::StyledPanel);
@@ -134,7 +130,7 @@ public:
         lblDoc1Name = new QLabel(verticalLayoutWidget_4);
         lblDoc1Name->setObjectName("lblDoc1Name");
         lblDoc1Name->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"    color: #E0E0E0;\n"
+"    color: #6482AD;\n"
 "    font-family: \"Segoe UI\";\n"
 "    font-weight: 500;\n"
 "}"));
@@ -145,12 +141,13 @@ public:
         pbDoc1 = new QProgressBar(verticalLayoutWidget_4);
         pbDoc1->setObjectName("pbDoc1");
         pbDoc1->setStyleSheet(QString::fromUtf8("QProgressBar {\n"
-"    border: 2px solid #333;\n"
+"    \n"
 "    border-radius: 5px;\n"
 "    text-align: center;\n"
-"    color: white;\n"
+"    color: orange;\n"
 "    font-weight: bold;\n"
-"    background-color: #121212;\n"
+"    background-color: #FFF4EA;\n"
+"border: 1px solid #BF4646;\n"
 "}\n"
 "\n"
 "QProgressBar::chunk {\n"
@@ -167,8 +164,8 @@ public:
         doc2 = new QFrame(verticalLayoutWidget_3);
         doc2->setObjectName("doc2");
         doc2->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1B263B;\n"
-"    border: 1px solid #415A77; /* Subtle border to make it look like glass */\n"
+"    background-color: #E2DAD6;\n"
+"    \n"
 "    margin: 5px;\n"
 "}"));
         doc2->setFrameShape(QFrame::Shape::StyledPanel);
@@ -182,7 +179,7 @@ public:
         lblDoc2Name = new QLabel(verticalLayoutWidget_5);
         lblDoc2Name->setObjectName("lblDoc2Name");
         lblDoc2Name->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"    color: #E0E0E0;\n"
+"    color: #6482AD;\n"
 "    font-family: \"Segoe UI\";\n"
 "    font-weight: 500;\n"
 "}"));
@@ -193,12 +190,13 @@ public:
         pbDoc2 = new QProgressBar(verticalLayoutWidget_5);
         pbDoc2->setObjectName("pbDoc2");
         pbDoc2->setStyleSheet(QString::fromUtf8("QProgressBar {\n"
-"    border: 2px solid #333;\n"
+"    \n"
 "    border-radius: 5px;\n"
 "    text-align: center;\n"
-"    color: white;\n"
+"    color: orange;\n"
 "    font-weight: bold;\n"
-"    background-color: #121212;\n"
+"    background-color: #FFF4EA;\n"
+"border: 1px solid #BF4646;\n"
 "}\n"
 "\n"
 "QProgressBar::chunk {\n"
@@ -215,8 +213,8 @@ public:
         doc3 = new QFrame(verticalLayoutWidget_3);
         doc3->setObjectName("doc3");
         doc3->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1B263B;\n"
-"    border: 1px solid #415A77; /* Subtle border to make it look like glass */\n"
+"    background-color: #E2DAD6;\n"
+"    \n"
 "    margin: 5px;\n"
 "}"));
         doc3->setFrameShape(QFrame::Shape::StyledPanel);
@@ -230,7 +228,7 @@ public:
         lblDoc3Name = new QLabel(verticalLayoutWidget_6);
         lblDoc3Name->setObjectName("lblDoc3Name");
         lblDoc3Name->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"    color: #E0E0E0;\n"
+"    color: #6482AD;\n"
 "    font-family: \"Segoe UI\";\n"
 "    font-weight: 500;\n"
 "}"));
@@ -241,12 +239,13 @@ public:
         pbDoc3 = new QProgressBar(verticalLayoutWidget_6);
         pbDoc3->setObjectName("pbDoc3");
         pbDoc3->setStyleSheet(QString::fromUtf8("QProgressBar {\n"
-"    border: 2px solid #333;\n"
+"    \n"
 "    border-radius: 5px;\n"
 "    text-align: center;\n"
-"    color: white;\n"
+"    color: orange;\n"
 "    font-weight: bold;\n"
-"    background-color: #121212;\n"
+"    background-color: #FFF4EA;\n"
+"border: 1px solid #BF4646;\n"
 "}\n"
 "\n"
 "QProgressBar::chunk {\n"
@@ -266,9 +265,9 @@ public:
         frameQueue = new QFrame(horizontalLayoutWidget);
         frameQueue->setObjectName("frameQueue");
         frameQueue->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1E1E2E;\n"
+"    background-color: #7FA1C3;\n"
 "    border-radius: 12px;\n"
-"    border: 1px solid #33334d;\n"
+"    border: 1px solid #DDDAD0;\n"
 "}"));
         frameQueue->setFrameShape(QFrame::Shape::StyledPanel);
         frameQueue->setFrameShadow(QFrame::Shadow::Raised);
@@ -292,8 +291,8 @@ public:
         listPatients = new QListWidget(verticalLayoutWidget_2);
         listPatients->setObjectName("listPatients");
         listPatients->setStyleSheet(QString::fromUtf8("QListWidget {\n"
-"    background-color: #161625;\n"
-"    border: 1px solid #00B4D8;\n"
+"    background-color: #6482AD;\n"
+"    border: 1px solid #DDDAD0;\n"
 "    border-radius: 8px;\n"
 "    color: #E0E0E0;\n"
 "    font-family: \"Segoe UI\", sans-serif;\n"
@@ -309,9 +308,9 @@ public:
         frameInput = new QFrame(horizontalLayoutWidget);
         frameInput->setObjectName("frameInput");
         frameInput->setStyleSheet(QString::fromUtf8("QFrame {\n"
-"    background-color: #1E1E2E;\n"
+"    background-color: #7FA1C3;\n"
 "    border-radius: 12px;\n"
-"    border: 1px solid #33334d;\n"
+"    border: 1px solid #DDDAD0;\n"
 "}"));
         frameInput->setFrameShape(QFrame::Shape::StyledPanel);
         frameInput->setFrameShadow(QFrame::Shadow::Raised);
@@ -324,8 +323,8 @@ public:
         btnNormal = new QPushButton(verticalLayoutWidget);
         btnNormal->setObjectName("btnNormal");
         btnNormal->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    background-color: #00B4D8;\n"
-"    color: white;\n"
+"    background-color: #F5EDED;\n"
+"    color: #6482AD;\n"
 "    font-weight: bold;\n"
 "    border-radius: 6px;\n"
 "    padding: 12px;\n"
@@ -333,6 +332,7 @@ public:
 "}\n"
 "QPushButton:hover {\n"
 "    background-color: #0096C7;\n"
+"color:white;\n"
 "}"));
 
         verticalLayout->addWidget(btnNormal);
@@ -382,7 +382,8 @@ public:
 "    border: 2px solid #3d3d5c;\n"
 "    border-radius: 10px;\n"
 "    margin-top: 20px;\n"
-"    color: #00d4ff; /* Cyan title */\n"
+"  \n"
+"	color: rgb(0, 0, 127);\n"
 "    font-weight: bold;\n"
 "}"));
         groupSearch->setAlignment(Qt::AlignmentFlag::AlignCenter);
@@ -390,20 +391,20 @@ public:
         searchEdit->setObjectName("searchEdit");
         searchEdit->setGeometry(QRect(10, 40, 171, 31));
         searchEdit->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"    background-color: #1b1b2f;\n"
+"    background-color: #F5EDED;\n"
 "    border: 1px solid #00d4ff;\n"
 "    border-radius: 5px;\n"
 "    padding: 8px;\n"
-"    color: white;\n"
+"    color: #6482AD;\n"
 "}"));
         lblHistory = new QLabel(groupSearch);
         lblHistory->setObjectName("lblHistory");
         lblHistory->setGeometry(QRect(10, 80, 401, 231));
         lblHistory->setStyleSheet(QString::fromUtf8("QLabel{\n"
-"    background-color: #121225;\n"
+"    background-color: #E2DAD6;\n"
 "    border-radius: 5px;\n"
 "    padding: 10px;\n"
-"    color: #cccccc;\n"
+"    color: #6482AD;\n"
 "    font-family: \"Segoe UI\";\n"
 "    font-size: 13px;\n"
 "}"));
@@ -423,7 +424,8 @@ public:
 "    border: 2px solid #55557f;\n"
 "    border-radius: 10px;\n"
 "    margin-top: 15px;\n"
-"    color: #ffaa00; /* Orange for Navigation */\n"
+"    \n"
+"	color: rgb(0, 0, 127);\n"
 "    font-weight: bold;\n"
 "}"));
         groupNav->setAlignment(Qt::AlignmentFlag::AlignCenter);
@@ -431,8 +433,8 @@ public:
         lblMap->setObjectName("lblMap");
         lblMap->setGeometry(QRect(30, 30, 201, 31));
         lblMap->setStyleSheet(QString::fromUtf8("QLabel#lblMap {\n"
-"    background-color: #0d0d1a;\n"
-"    border: 1px dashed #55557f;\n"
+"    background-color: #E2DAD6;\n"
+"    border: 1px solid #55557f;\n"
 "    padding: 10px;\n"
 "    color: #8888aa;\n"
 "    font-family: \"Courier New\"; /* Monospace for map feel */\n"
@@ -440,25 +442,74 @@ public:
 "}"));
         btnToER1 = new QPushButton(groupNav);
         btnToER1->setObjectName("btnToER1");
-        btnToER1->setGeometry(QRect(20, 70, 121, 21));
+        btnToER1->setGeometry(QRect(20, 70, 121, 31));
+        btnToER1->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"   background-color: #E63946;\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #D62828;\n"
+"\n"
+"}"));
         lblRouteResult = new QLabel(groupNav);
         lblRouteResult->setObjectName("lblRouteResult");
         lblRouteResult->setGeometry(QRect(30, 120, 531, 141));
         lblRouteResult->setStyleSheet(QString::fromUtf8("QLabel#lblRouteResult {\n"
-"    color: #ffaa00;\n"
+"    color: #6482AD;\n"
 "    font-weight: bold;\n"
 "    padding: 5px;\n"
+"background-color:#E2DAD6;\n"
 "}"));
         lblRouteResult->setWordWrap(true);
         btnToER2 = new QPushButton(groupNav);
         btnToER2->setObjectName("btnToER2");
-        btnToER2->setGeometry(QRect(150, 70, 121, 21));
+        btnToER2->setGeometry(QRect(150, 70, 121, 31));
+        btnToER2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"   background-color: #E63946;\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #D62828;\n"
+"\n"
+"}"));
         btnToICU = new QPushButton(groupNav);
         btnToICU->setObjectName("btnToICU");
-        btnToICU->setGeometry(QRect(290, 70, 121, 21));
+        btnToICU->setGeometry(QRect(290, 70, 121, 31));
+        btnToICU->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"   background-color: #E63946;\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #D62828;\n"
+"\n"
+"}"));
         btnToSurgery = new QPushButton(groupNav);
         btnToSurgery->setObjectName("btnToSurgery");
-        btnToSurgery->setGeometry(QRect(420, 70, 121, 21));
+        btnToSurgery->setGeometry(QRect(420, 70, 121, 31));
+        btnToSurgery->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"   background-color: #E63946;\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"    border-radius: 6px;\n"
+"    padding: 8px;\n"
+"    font-size: 10px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #D62828;\n"
+"\n"
+"}"));
 
         horizontalLayout_3->addWidget(groupNav);
 
@@ -474,18 +525,19 @@ public:
 "    border: 1px solid #333333;\n"
 "    border-radius: 5px;\n"
 "    margin-top: 10px;\n"
-"    color: #00ff00; /* Neon Green */\n"
+"    \n"
+"	color: rgb(0, 0, 127);\n"
 "    font-weight: bold;\n"
-"    background-color: #050505;\n"
+"    background-color: #7FA1C3;\n"
 "}"));
         groupLogs->setAlignment(Qt::AlignmentFlag::AlignCenter);
         listLogs = new QListWidget(groupLogs);
         listLogs->setObjectName("listLogs");
         listLogs->setGeometry(QRect(10, 30, 401, 241));
         listLogs->setStyleSheet(QString::fromUtf8("QListWidget#listLogs {\n"
-"    background-color: #000000;\n"
+"    background-color: #E2DAD6;\n"
 "    border: none;\n"
-"    color: #00ff00; /* Terminal Green text */\n"
+"    color: #6482AD; \n"
 "    font-family: 'Courier New', monospace;\n"
 "    font-size: 11px;\n"
 "}"));
@@ -494,10 +546,6 @@ public:
         horizontalLayout_4->addWidget(groupLogs);
 
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1048, 18));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);

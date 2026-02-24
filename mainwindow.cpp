@@ -102,7 +102,7 @@ void MainWindow::on_searchEdit_returnPressed() {
     int id = ui->searchEdit->text().toInt();
     if (patientDatabase.find(id) != patientDatabase.end()) {
         ui->lblHistory->setText(patientDatabase[id]);
-        ui->lblHistory->setStyleSheet("color: #00ff00; border: 1px solid #00ff00; background: #121225;");
+        ui->lblHistory->setStyleSheet("color: #00ff00; border: 1px solid #00ff00; background: #6482AD;");
     } else {
         ui->lblHistory->setText("ID " + QString::number(id) + " Not Found.");
         ui->lblHistory->setStyleSheet("color: #ff4444; border: 1px solid #ff4444;");

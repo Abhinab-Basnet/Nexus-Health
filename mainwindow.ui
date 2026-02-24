@@ -14,9 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow {
-    background-color: #121212;
-}</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
@@ -33,9 +31,9 @@
       <widget class="QFrame" name="frameDoctors">
        <property name="styleSheet">
         <string notr="true">QFrame {
-    background-color: #1E1E2E;
+    background-color: #7FA1C3;
     border-radius: 12px;
-    border: 1px solid #33334d;
+    border: 1px solid #DDDAD0;
 }</string>
        </property>
        <property name="frameShape">
@@ -58,8 +56,8 @@
           <widget class="QFrame" name="doc1">
            <property name="styleSheet">
             <string notr="true">QFrame {
-    background-color: #1B263B;
-    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    background-color: #E2DAD6;
+    
     margin: 5px;
 }</string>
            </property>
@@ -83,7 +81,7 @@
               <widget class="QLabel" name="lblDoc1Name">
                <property name="styleSheet">
                 <string notr="true">QLabel {
-    color: #E0E0E0;
+    color: #6482AD;
     font-family: &quot;Segoe UI&quot;;
     font-weight: 500;
 }</string>
@@ -100,12 +98,13 @@
               <widget class="QProgressBar" name="pbDoc1">
                <property name="styleSheet">
                 <string notr="true">QProgressBar {
-    border: 2px solid #333;
+    
     border-radius: 5px;
     text-align: center;
-    color: white;
+    color: orange;
     font-weight: bold;
-    background-color: #121212;
+    background-color: #FFF4EA;
+border: 1px solid #BF4646;
 }
 
 QProgressBar::chunk {
@@ -126,8 +125,8 @@ QProgressBar::chunk {
           <widget class="QFrame" name="doc2">
            <property name="styleSheet">
             <string notr="true">QFrame {
-    background-color: #1B263B;
-    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    background-color: #E2DAD6;
+    
     margin: 5px;
 }</string>
            </property>
@@ -151,7 +150,7 @@ QProgressBar::chunk {
               <widget class="QLabel" name="lblDoc2Name">
                <property name="styleSheet">
                 <string notr="true">QLabel {
-    color: #E0E0E0;
+    color: #6482AD;
     font-family: &quot;Segoe UI&quot;;
     font-weight: 500;
 }</string>
@@ -168,12 +167,13 @@ QProgressBar::chunk {
               <widget class="QProgressBar" name="pbDoc2">
                <property name="styleSheet">
                 <string notr="true">QProgressBar {
-    border: 2px solid #333;
+    
     border-radius: 5px;
     text-align: center;
-    color: white;
+    color: orange;
     font-weight: bold;
-    background-color: #121212;
+    background-color: #FFF4EA;
+border: 1px solid #BF4646;
 }
 
 QProgressBar::chunk {
@@ -194,8 +194,8 @@ QProgressBar::chunk {
           <widget class="QFrame" name="doc3">
            <property name="styleSheet">
             <string notr="true">QFrame {
-    background-color: #1B263B;
-    border: 1px solid #415A77; /* Subtle border to make it look like glass */
+    background-color: #E2DAD6;
+    
     margin: 5px;
 }</string>
            </property>
@@ -219,7 +219,7 @@ QProgressBar::chunk {
               <widget class="QLabel" name="lblDoc3Name">
                <property name="styleSheet">
                 <string notr="true">QLabel {
-    color: #E0E0E0;
+    color: #6482AD;
     font-family: &quot;Segoe UI&quot;;
     font-weight: 500;
 }</string>
@@ -236,12 +236,13 @@ QProgressBar::chunk {
               <widget class="QProgressBar" name="pbDoc3">
                <property name="styleSheet">
                 <string notr="true">QProgressBar {
-    border: 2px solid #333;
+    
     border-radius: 5px;
     text-align: center;
-    color: white;
+    color: orange;
     font-weight: bold;
-    background-color: #121212;
+    background-color: #FFF4EA;
+border: 1px solid #BF4646;
 }
 
 QProgressBar::chunk {
@@ -266,9 +267,9 @@ QProgressBar::chunk {
       <widget class="QFrame" name="frameQueue">
        <property name="styleSheet">
         <string notr="true">QFrame {
-    background-color: #1E1E2E;
+    background-color: #7FA1C3;
     border-radius: 12px;
-    border: 1px solid #33334d;
+    border: 1px solid #DDDAD0;
 }</string>
        </property>
        <property name="frameShape">
@@ -308,8 +309,8 @@ QProgressBar::chunk {
           <widget class="QListWidget" name="listPatients">
            <property name="styleSheet">
             <string notr="true">QListWidget {
-    background-color: #161625;
-    border: 1px solid #00B4D8;
+    background-color: #6482AD;
+    border: 1px solid #DDDAD0;
     border-radius: 8px;
     color: #E0E0E0;
     font-family: &quot;Segoe UI&quot;, sans-serif;
@@ -327,9 +328,9 @@ QProgressBar::chunk {
       <widget class="QFrame" name="frameInput">
        <property name="styleSheet">
         <string notr="true">QFrame {
-    background-color: #1E1E2E;
+    background-color: #7FA1C3;
     border-radius: 12px;
-    border: 1px solid #33334d;
+    border: 1px solid #DDDAD0;
 }</string>
        </property>
        <property name="frameShape">
@@ -352,8 +353,8 @@ QProgressBar::chunk {
           <widget class="QPushButton" name="btnNormal">
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: #00B4D8;
-    color: white;
+    background-color: #F5EDED;
+    color: #6482AD;
     font-weight: bold;
     border-radius: 6px;
     padding: 12px;
@@ -361,6 +362,7 @@ QProgressBar::chunk {
 }
 QPushButton:hover {
     background-color: #0096C7;
+color:white;
 }</string>
            </property>
            <property name="text">
@@ -438,7 +440,8 @@ QPushButton:hover {
     border: 2px solid #3d3d5c;
     border-radius: 10px;
     margin-top: 20px;
-    color: #00d4ff; /* Cyan title */
+  
+	color: rgb(0, 0, 127);
     font-weight: bold;
 }</string>
        </property>
@@ -459,11 +462,11 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLineEdit{
-    background-color: #1b1b2f;
+    background-color: #F5EDED;
     border: 1px solid #00d4ff;
     border-radius: 5px;
     padding: 8px;
-    color: white;
+    color: #6482AD;
 }</string>
         </property>
         <property name="placeholderText">
@@ -481,10 +484,10 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel{
-    background-color: #121225;
+    background-color: #E2DAD6;
     border-radius: 5px;
     padding: 10px;
-    color: #cccccc;
+    color: #6482AD;
     font-family: &quot;Segoe UI&quot;;
     font-size: 13px;
 }</string>
@@ -517,7 +520,8 @@ QPushButton:hover {
     border: 2px solid #55557f;
     border-radius: 10px;
     margin-top: 15px;
-    color: #ffaa00; /* Orange for Navigation */
+    
+	color: rgb(0, 0, 127);
     font-weight: bold;
 }</string>
        </property>
@@ -538,8 +542,8 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel#lblMap {
-    background-color: #0d0d1a;
-    border: 1px dashed #55557f;
+    background-color: #E2DAD6;
+    border: 1px solid #55557f;
     padding: 10px;
     color: #8888aa;
     font-family: &quot;Courier New&quot;; /* Monospace for map feel */
@@ -556,8 +560,22 @@ QPushButton:hover {
           <x>20</x>
           <y>70</y>
           <width>121</width>
-          <height>21</height>
+          <height>31</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   background-color: #E63946;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #D62828;
+
+}</string>
         </property>
         <property name="text">
          <string>Emergency Room 1</string>
@@ -574,9 +592,10 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QLabel#lblRouteResult {
-    color: #ffaa00;
+    color: #6482AD;
     font-weight: bold;
     padding: 5px;
+background-color:#E2DAD6;
 }</string>
         </property>
         <property name="text">
@@ -592,8 +611,22 @@ QPushButton:hover {
           <x>150</x>
           <y>70</y>
           <width>121</width>
-          <height>21</height>
+          <height>31</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   background-color: #E63946;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #D62828;
+
+}</string>
         </property>
         <property name="text">
          <string>Emergency Room 2</string>
@@ -605,8 +638,22 @@ QPushButton:hover {
           <x>290</x>
           <y>70</y>
           <width>121</width>
-          <height>21</height>
+          <height>31</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   background-color: #E63946;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #D62828;
+
+}</string>
         </property>
         <property name="text">
          <string>ICU</string>
@@ -618,8 +665,22 @@ QPushButton:hover {
           <x>420</x>
           <y>70</y>
           <width>121</width>
-          <height>21</height>
+          <height>31</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+   background-color: #E63946;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 10px;
+}
+QPushButton:hover {
+    background-color: #D62828;
+
+}</string>
         </property>
         <property name="text">
          <string>Surgery</string>
@@ -646,9 +707,10 @@ QPushButton:hover {
     border: 1px solid #333333;
     border-radius: 5px;
     margin-top: 10px;
-    color: #00ff00; /* Neon Green */
+    
+	color: rgb(0, 0, 127);
     font-weight: bold;
-    background-color: #050505;
+    background-color: #7FA1C3;
 }</string>
        </property>
        <property name="title">
@@ -668,9 +730,9 @@ QPushButton:hover {
         </property>
         <property name="styleSheet">
          <string notr="true">QListWidget#listLogs {
-    background-color: #000000;
+    background-color: #E2DAD6;
     border: none;
-    color: #00ff00; /* Terminal Green text */
+    color: #6482AD; 
     font-family: 'Courier New', monospace;
     font-size: 11px;
 }</string>
@@ -683,16 +745,6 @@ QPushButton:hover {
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1048</width>
-     <height>18</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
